@@ -256,4 +256,22 @@ header {
             }
           }
         }
+        .mahasiswa-berprestasi {
+          .mawapres {
+            p {
+              margin-top: 20px;
+            }
+            margin-top: 20px;
+            @extend %flex;
+            justify-content: space-evenly;
+            .main-mawapres {
+              width: 250px;
+              height: 180px;
+              box-shadow: 0px 0px 10px 10px rgba($color: #535353, $alpha: 0.4);
+              img {
+                @include img-size(140px, 100px)
+              }
+            }  
+          }
+        }
 
