@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+header .navbar .menu-wrap .menu-item:hover .menu-sub,
+header .navbar .menu-wrap .menu-item .menu-sub:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+header #header-wrap,
+header .navbar .menu-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'roboto', arial;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+}
+
+header #header-wrap {
+  padding: 12px 6vw;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-shadow: 0px 1px 4px 0px rgba(170, 168, 168, 0.8);
+  box-shadow: 0px 1px 4px 0px rgba(170, 168, 168, 0.8);
+}
+
+header #header-wrap #logo {
+  margin-right: auto;
+}
+
+header #header-wrap #logo img {
+  width: 200px;
+  cursor: pointer;
+}
+
+header .navbar {
+  position: absolute;
+  height: 100%;
+}
+
+header .navbar .menu-wrap {
+  list-style: none;
+  height: 100%;
+}
+
+header .navbar .menu-wrap .menu-item {
+  position: relative;
+  display: inline-block;
+  height: 50%;
+  top: 15%;
+}
+
+header .navbar .menu-wrap .menu-item:hover > a {
+  background-color: #f0f0f0;
+}
+
+header .navbar .menu-wrap .menu-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #4f4f4f;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.04rem;
+  padding: 14px 20px;
+  border-radius: 2px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+> header .navbar .menu-wrap .menu-item a:hover {
+  background-color: #f0f0f0;
+}
+
+header .navbar .menu-wrap .menu-item .menu-sub {
+  position: absolute;
+  margin-top: 1.5rem;
+  display: none;
+  background-color: #fff;
+  width: 17.5vw;
+  visibility: hidden;
+  left: 0;
+  border-top: 2px solid #0652dd;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(170, 168, 168, 0.8);
+  box-shadow: 0px 1px 5px 0px rgba(170, 168, 168, 0.8);
+  border-radius: 2px;
+}
+
+header .navbar .menu-wrap .menu-item .menu-sub li {
+  display: block;
+  padding: 12px 0px;
+}
+
+header .navbar .menu-wrap .menu-item .menu-sub li:hover {
+  background-color: #f7f7f7;
+  cursor: pointer;
+}
+
+header .navbar .menu-wrap .menu-item .menu-sub li:hover a {
+  color: #0652dd;
+  margin-left: 5px;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+header .navbar .menu-wrap .menu-item .menu-sub li a {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #666666;
+  text-transform: capitalize;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+/*# sourceMappingURL=style.css.map */
