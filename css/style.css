@@ -127,4 +127,25 @@ header .navbar .menu-wrap .menu-item .menu-sub li a {
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
+
+.cover-overlay {
+  display: inline-block;
+  text-align: center;
+  padding: 17em 32em;
+  width: 320px;
+}
+
+.cover-overlay h1 {
+  background-color: rgba(27, 0, 124, 0.4);
+  color: white;
+  padding: 0.3em;
+}
+
+.cover-overlay p {
+  background-color: rgba(37, 37, 37, 0.4);
+  color: white;
+  margin-top: 8px;
+  padding: 0.5em;
+  font-size: 20px;
+}
 /*# sourceMappingURL=style.css.map */
