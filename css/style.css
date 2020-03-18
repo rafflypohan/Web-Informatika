@@ -370,4 +370,35 @@ header .navbar .menu-wrap .menu-item .menu-sub li a {
   -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
           box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
 }
+
+.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .lomba .jenis-lomba .gemastik p {
+  margin-top: 35px;
+}
+
+.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .lomba .jenis-lomba .gemastik img {
+  width: 100px;
+  height: 100px;
+}
+
+.container .pengumuman-kegiatan .kegiatan {
+  margin-top: 100px;
+}
+
+.container .pengumuman-kegiatan .kegiatan .notif {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .pengumuman-kegiatan .kegiatan .notif .act {
+  margin-top: 20px;
+  width: 700px;
+  height: 180px;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
+          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
+}
+
+.container .pengumuman-kegiatan .kegiatan .notif .act p {
+  margin-top: 70px;
+}
 /*# sourceMappingURL=style.css.map */
