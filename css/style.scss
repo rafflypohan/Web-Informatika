@@ -336,3 +336,21 @@ header {
         }  
       }
     }
+    .kegiatan {
+      margin-top: 100px;
+      .notif {
+        @extend %flex;
+        justify-content: space-evenly;
+        .act {
+          p {
+            margin-top: 70px;
+          }
+          margin-top: 20px;
+          width: 700px;
+          height: 180px;
+          box-shadow: 0px 0px 10px 10px rgba($color: #535353, $alpha: 0.4);
+        }
+      }
+    }  
+  }  
+}
