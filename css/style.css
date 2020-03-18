@@ -205,4 +205,42 @@ header .navbar .menu-wrap .menu-item .menu-sub li a {
 .container .berita .hot-news img {
   width: 20em;
 }
+
+.container .pengumuman-kegiatan {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.container .pengumuman-kegiatan .pengumuman img {
+  margin-top: 10px;
+}
+
+.container .pengumuman-kegiatan .pengumuman .grid-pengumuman {
+  margin-top: 40px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-column-gap: 100px;
+}
+
+.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur {
+  margin-top: 20px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur p {
+  margin-top: 35px;
+}
+
+.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur .jalur-snmptn {
+  width: 200px;
+  height: 180px;
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
+          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
+}
+
+
 /*# sourceMappingURL=style.css.map */
