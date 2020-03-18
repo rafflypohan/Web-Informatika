@@ -304,3 +304,35 @@ header {
             }
           }
         }
+        .lomba {
+          margin-top: 60px;
+          .jenis-lomba {
+            margin-top: 20px;
+            @extend %flex;
+            justify-content: space-evenly;
+            .hackaton {
+              width: 230px;
+              height: 180px;
+              box-shadow: 0px 0px 10px 10px rgba($color: #535353, $alpha: 0.4);
+              p {
+                margin-top: 35px;
+              }
+              img {
+                @include img-size(100px, 100px)
+              }
+            }
+            .gemastik {
+              width: 230px;
+              height: 180px;
+              box-shadow: 0px 0px 10px 10px rgba($color: #535353, $alpha: 0.4);
+              p {
+                margin-top: 35px;
+              }
+              img {
+                @include img-size(100px, 100px)
+              }
+            }
+          }
+        }  
+      }
+    }
