@@ -1,19 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-header .navbar .menu-wrap .menu-item:hover .menu-sub,
-header .navbar .menu-wrap .menu-item .menu-sub:hover {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+#header .navbar .menu-wrap .menu-item:hover .menu-sub, #header .navbar .menu-wrap .menu-item .menu-sub:hover {
   visibility: visible;
   opacity: 1;
   display: block;
 }
 
-header #header-wrap,
-header .navbar .menu-wrap {
+#header #header-wrap, #header .navbar .menu-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 * {
@@ -22,56 +20,60 @@ header .navbar .menu-wrap {
 }
 
 body {
-  font-family: 'roboto', arial;
+  font-family: "roboto", arial;
 }
 
-header {
+.wrapper {
+  width: 100%;
+}
+
+#header {
   width: 100%;
   position: fixed;
   background-color: #fff;
   top: 0;
 }
 
-header #header-wrap {
+#header #header-wrap {
   padding: 12px 6vw;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-shadow: 0px 1px 4px 0px rgba(170, 168, 168, 0.8);
-  box-shadow: 0px 1px 4px 0px rgba(170, 168, 168, 0.8);
+          box-shadow: 0px 1px 4px 0px rgba(170, 168, 168, 0.8);
 }
 
-header #header-wrap #logo {
+#header #header-wrap #logo {
   margin-right: auto;
 }
 
-header #header-wrap #logo img {
+#header #header-wrap #logo img {
   width: 200px;
   cursor: pointer;
 }
 
-header .navbar {
+#header .navbar {
   position: absolute;
   height: 100%;
 }
 
-header .navbar .menu-wrap {
+#header .navbar .menu-wrap {
   list-style: none;
   height: 100%;
 }
 
-header .navbar .menu-wrap .menu-item {
+#header .navbar .menu-wrap .menu-item {
   position: relative;
   display: inline-block;
   height: 50%;
   top: 15%;
 }
 
-header .navbar .menu-wrap .menu-item:hover > a {
+#header .navbar .menu-wrap .menu-item:hover > a {
   background-color: #f0f0f0;
 }
 
-header .navbar .menu-wrap .menu-item a {
+#header .navbar .menu-wrap .menu-item a {
   text-decoration: none;
   text-transform: uppercase;
   color: #4f4f4f;
@@ -84,11 +86,11 @@ header .navbar .menu-wrap .menu-item a {
   transition: 0.2s ease-in-out;
 }
 
-> header .navbar .menu-wrap .menu-item a:hover {
+> #header .navbar .menu-wrap .menu-item a:hover {
   background-color: #f0f0f0;
 }
 
-header .navbar .menu-wrap .menu-item .menu-sub {
+#header .navbar .menu-wrap .menu-item .menu-sub {
   position: absolute;
   margin-top: 1.5rem;
   display: none;
@@ -98,28 +100,28 @@ header .navbar .menu-wrap .menu-item .menu-sub {
   left: 0;
   border-top: 2px solid #0652dd;
   -webkit-box-shadow: 0px 1px 5px 0px rgba(170, 168, 168, 0.8);
-  box-shadow: 0px 1px 5px 0px rgba(170, 168, 168, 0.8);
+          box-shadow: 0px 1px 5px 0px rgba(170, 168, 168, 0.8);
   border-radius: 2px;
 }
 
-header .navbar .menu-wrap .menu-item .menu-sub li {
+#header .navbar .menu-wrap .menu-item .menu-sub li {
   display: block;
   padding: 12px 0px;
 }
 
-header .navbar .menu-wrap .menu-item .menu-sub li:hover {
+#header .navbar .menu-wrap .menu-item .menu-sub li:hover {
   background-color: #f7f7f7;
   cursor: pointer;
 }
 
-header .navbar .menu-wrap .menu-item .menu-sub li:hover a {
+#header .navbar .menu-wrap .menu-item .menu-sub li:hover a {
   color: #0652dd;
   margin-left: 5px;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
 }
 
-header .navbar .menu-wrap .menu-item .menu-sub li a {
+#header .navbar .menu-wrap .menu-item .menu-sub li a {
   font-size: 0.8rem;
   font-weight: 600;
   color: #666666;
@@ -128,277 +130,39 @@ header .navbar .menu-wrap .menu-item .menu-sub li a {
   transition: 0.4s ease;
 }
 
-.cover-overlay {
-  display: inline-block;
-  text-align: center;
-  padding: 17em 32em;
-  width: 320px;
-}
-
-.cover-overlay h1 {
-  background-color: rgba(27, 0, 124, 0.4);
-  color: white;
-  padding: 0.3em;
-}
-
-.cover-overlay p {
-  background-color: rgba(37, 37, 37, 0.4);
-  color: white;
-  margin-top: 8px;
-  padding: 0.5em;
-  font-size: 20px;
-}
-
-.backvideo {
-  position: absolute;
-  right: 0;
+#footer {
+  background-color: #333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
   bottom: 0;
-  width: auto;
-  height: auto;
-  z-index: -1;
-  min-width: 100%;
-  min-height: 100%;
+  position: absolute;
+  color: #c9c8c8;
 }
 
-.container .berita h1 {
-  padding-left: 25em;
-  width: 200px;
-  margin-top: 40px;
+#footer .footer-wrap {
+  margin: 20px 6vw;
+  position: relative;
 }
 
-.container .berita .hot-news {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 15px;
+#footer .footer-wrap .bawah-logo {
+  float: left;
 }
 
-.container .berita .hot-news .content-news1 {
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
+#footer .footer-wrap .bawah-logo #if {
+  margin-bottom: 10px;
 }
 
-.container .berita .hot-news .content-news2 {
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
+#footer .footer-wrap .bawah-logo #alamat {
+  margin-bottom: 10px;
 }
 
-.container .berita .hot-news .content-news3 {
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-}
-
-.container .berita .hot-news div {
-  margin-top: 15px;
-}
-
-.container .berita .hot-news p {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.container .berita .hot-news a {
-  text-decoration: none;
-  color: black;
-}
-
-.container .berita .hot-news img {
-  width: 20em;
-}
-
-.container .pengumuman-kegiatan {
-  margin-top: 120px;
-  text-align: center;
-}
-
-.container .pengumuman-kegiatan .pengumuman img {
-  margin-top: 10px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman {
-  margin-top: 40px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  grid-column-gap: 100px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur {
-  margin-top: 20px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur p {
-  margin-top: 35px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur .jalur-snmptn {
-  width: 200px;
-  height: 180px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur .jalur-snmptn img {
-  width: 150px;
-  height: auto;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur .jalur-sbmptn {
-  width: 200px;
-  height: 180px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur .jalur-sbmptn img {
-  width: 120px;
-  height: 100px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur .jalur-mandiri {
-  width: 200px;
-  height: 180px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .penerimaan-mahasiswa-baru .jalur .jalur-mandiri img {
-  width: 140px;
-  height: 100px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .mahasiswa-berprestasi .mawapres {
-  margin-top: 20px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .mahasiswa-berprestasi .mawapres p {
-  margin-top: 20px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .mahasiswa-berprestasi .mawapres .main-mawapres {
-  width: 250px;
-  height: 180px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .mahasiswa-berprestasi .mawapres .main-mawapres img {
-  width: 140px;
-  height: 100px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .beasiswa {
-  margin-top: 60px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .beasiswa .jalur-beasiswa {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 20px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .beasiswa .jalur-beasiswa .bidikmisi {
-  width: 230px;
-  height: 180px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .beasiswa .jalur-beasiswa .bidikmisi p {
-  margin-top: 35px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .beasiswa .jalur-beasiswa .bidikmisi img {
-  width: 100px;
-  height: 100px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .beasiswa .jalur-beasiswa .bank-indonesia {
-  width: 230px;
-  height: 180px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .beasiswa .jalur-beasiswa .bank-indonesia p {
-  margin-top: 55px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .beasiswa .jalur-beasiswa .bank-indonesia img {
-  width: 80px;
-  height: 80px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .lomba {
-  margin-top: 60px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .lomba .jenis-lomba {
-  margin-top: 20px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .lomba .jenis-lomba .hackaton {
-  width: 230px;
-  height: 180px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .lomba .jenis-lomba .hackaton p {
-  margin-top: 35px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .lomba .jenis-lomba .hackaton img {
-  width: 100px;
-  height: 100px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .lomba .jenis-lomba .gemastik {
-  width: 230px;
-  height: 180px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .lomba .jenis-lomba .gemastik p {
-  margin-top: 35px;
-}
-
-.container .pengumuman-kegiatan .pengumuman .grid-pengumuman .lomba .jenis-lomba .gemastik img {
-  width: 100px;
-  height: 100px;
-}
-
-.container .pengumuman-kegiatan .kegiatan {
-  margin-top: 100px;
-}
-
-.container .pengumuman-kegiatan .kegiatan .notif {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
-.container .pengumuman-kegiatan .kegiatan .notif .act {
-  margin-top: 20px;
-  width: 700px;
-  height: 180px;
-  -webkit-box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-          box-shadow: 0px 0px 10px 10px rgba(83, 83, 83, 0.4);
-}
-
-.container .pengumuman-kegiatan .kegiatan .notif .act p {
-  margin-top: 70px;
+#footer .footer-wrap .tengah {
+  clear: both;
 }
 /*# sourceMappingURL=style.css.map */
