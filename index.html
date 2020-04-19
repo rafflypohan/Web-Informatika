@@ -3,126 +3,222 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informatika</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>Informatika | Institut Teknologi Kalimantan</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
   </head>
   <body>
-    <main class="wrapper">
-      <header id="header">
-        <section id="header-wrap">
-          <section id="logo">
-            <a href="index.html"><img src="img/iflogo.png" alt="Informatika Institut Teknologi Kalimantan"/></a>
-          </section>
-          <nav class="navbar">
-            <ul class="menu-wrap">
-              <li class="menu-item">
-                <a href="index.html" class="active">Profile Prodi</a>
-                <ul class="menu-sub">
-                  <li><a href="">sejarah</a></li>
-                  <li><a href="">visi & misi</a></li>
-                  <li><a href="">struktur organisasi</a></li>
-                  <li><a href="">akreditasi</a></li>
-                  <li><a href="">kerjasama</a></li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Civitas</a>
-                <ul class="menu-sub">
-                  <li><a href="">Dosen</a></li>
-                  <li><a href="">Tenaga kependidikan</a></li>
-                  <li><a href="">Alumni</a></li>
-                  <li><a href="">himpunan</a></li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="">Akademik</a>
-                <ul class="menu-sub">
-                  <li><a href="">beasiswa</a></li>
-                  <li><a href="">prestasi</a></li>
-                  <li><a href="">Kurikulum</a></li>
-                  <li><a href="">Laboratorium</a></li>
-                  <li><a href="">biaya kuliah</a></li>
-                  <li><a href="">Kalender Akademik</a></li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="">Pengabdian & Penelitian</a>
-                <ul class="menu-sub">
-                  <li><a href="">penelitian</a></li>
-                  <li><a href="">pengabdian pada masyarakat</a></li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="">Info</a>
-                <ul class="menu-sub">
-                  <li><a href="">berita</a></li>
-                  <li><a href="">agenda</a></li>
-                  <li><a href="">artikel</a></li>
-                </ul>
-              </li>
-              <li class="menu-item"><a href="">Kontak</a></li>
-              <!-- <div class="search">
-              <form action="">
-                <input type="search" placeholder="Cari..." />
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div> -->
-            </ul>
+    <section>
+      <header>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+          <div class="navbar__logo navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img src="assets/img/iflogo.png" />
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
+          </div>
 
-            <!-- <video autoplay loop muted><source src="backvideo.mp4" type="video/mp4"></video> -->
-          </nav>
-        </section>
+          <div id="navMenu" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="nav-menu navbar-link">Profile Prodi</a>
+                <div class="navbar-dropdown">
+                  <a class="nav-menu__submenu navbar-item" href="pages/sejarah.html">sejarah</a>
+                  <a class="nav-menu__submenu navbar-item" href="pages/visi-misi.html">visi & misi</a>
+                  <a class="nav-menu__submenu navbar-item" href="pages/Struktur.html">struktur organisasi</a>
+                  <a class="nav-menu__submenu navbar-item" href="pages/akreditasi.html">akreditasi</a>
+                  <a class="nav-menu__submenu navbar-item" href="pages/kerjasama.html">kerjasama</a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Profile Prodi</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="pages/sejarah.html">sejarah</a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Profile Prodi</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="pages/sejarah.html">sejarah</a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Profile Prodi</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="pages/sejarah.html">sejarah</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
       </header>
+      <main>
+        <section class="hero is-fullheight has-carousel">
+          <div id="carousel-demo" class="hero-carousel">
+            <div class="item-1">
+              <img src="assets/1.jpg" alt="" />
+            </div>
+            <div class="item-2">
+              <!-- Slide Content -->
+              <img src="assets/2.png" alt="" />
+            </div>
+            <div class="item-3">
+              <!-- Slide Content -->
+              <img src="assets/3.jpg" alt="" />
+            </div>
+            <div class="item-1">
+              <img src="assets/4.jpg" alt="" />
+            </div>
+            <div class="item-2" data-slides-to-scroll="1">
+              <!-- Slide Content -->
+              <img src="assets/5.jpg" alt="" />
+            </div>
+            <div class="item-3">
+              <!-- Slide Content -->
+              <img src="assets/6.jpg" alt="" />
+            </div>
+          </div>
+          <div class="hero-head"></div>
+          <div class="hero-body"></div>
+          <div class="hero-foot"></div>
+        </section>
+        <section class="container is-fullhd">
+          <div class="columns pengumuman is-variable is-8">
+            <div class="column is-one-quarter">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-5by3">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-6x6">
+                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">John Smith</p>
+                      <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                  </div>
 
-      <!-- <section class="container">
-        <h1>Apa itu informatika</h1>
-	    <p>Program Studi Informatika berdiri pada tahun 2016 bersamaan dengan Program Studi Teknik Industri dan Teknik Lingkungan. Kehadiran program studi Informatika di Institut Teknologi Kalimantan diharapkan dapat berpartisipasi aktif dalam mendukung Buku Putih Indonesia 2005-2025 di bidang Teknologi Informasi dan Komunikasi. Dalam mengakomodir kebutuhan dunia kerja, Program Studi Informatika ITK difokuskan pada tiga bidang keahlian, yaitu Computer Network (Jaringan Komputer), Computer Science (Ilmu Komputer), dan Software Engineering (Rekayasa Perangkat Lunak). Bidang keahlian ini melingkupi keilmuan yang berinteraksi dengan keilmuan perangkat lunak, komunikasi dan komputasi mesin. Kurikulum pembelajarannya lebih difokuskan pada teori, prinsip, dan penerapan kecerdasan buatan dan perangkat lunak berbasis komputer dan matematika dasar dalam permasalahan perancangan aplikasi dan sistem yang berbasis komputer. Lulusan Prodi Informatika ITK diharapkan memiliki kompetensi dalam bidang dasar informatika, memiliki keahlian dalam pemrograman komputer serta mampu mendayagunakan, mengevaluasi dan mengidentifikasi pengembangan sistem berbasis komputer.</p>
-		</p>
-		<h2>Visi</h1>
-		<p>Menjadi program studi unggul di bidang Informatika yang inovatif dan kreatif dalam poros Kalimantan pada tahun 2025
-		</p>
-		<h3>Misi</h3>
-		<p>
-		1.Menyelenggarakan sistem pendidikan yang efektif, efisien, dan berkelanjutan dalam rangka menghasilkan lulusan sarjana Informatika
-		<br>
-		2.Menghasilkan lulusan yang memiliki kompetensi di bidang Informatika, berjiwa wirausaha (entrepreneur) dan dapat berperan positif di tingkat nasional dan internasional (world class)
-		<br>
-		3.Meningkatkan kontribusi dan kolaborasi dengan berbagai pihak dalam masyarakat dengan mengembangkan produk dan layanan dalam bidang Informatika di tingkat regional, nasional maupun internasional
-      </section> -->
-    </main>
-    <footer id="footer">
-      <section class="footer-wrap">
-        <section class="bawah-logo">
-          <div id="logo">
-            <img src="img/if.png" alt="Informatika Institut Teknologi Kalimantan" />
-          </div>
-          <div id="if">
-            <h1>Informatika</h1>
-            <p>Institut Teknologi Kalimantan</p>
-          </div>
-          <div id="alamat">
-            <h1>Alamat:</h1>
-            <p>Jl. Soekarno-Hatta Km. 15, Karang Joang, Balikpapan</p>
-            <p>Kalimantan Timur, Indonesia</p>
-          </div>
-          <div id="kontak">
-            <p><b>Telp: </b>08xxxxxx</p>
-            <p><b>E-mail: </b>tawd@gaidaow.cmo</p>
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br />
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="column is-one-quarter">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-5by3">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-6x6">
+                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">John Smith</p>
+                      <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br />
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-quarter">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-5by3">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-6x6">
+                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">John Smith</p>
+                      <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br />
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-one-quarter">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image is-5by3">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image" />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-left">
+                      <figure class="image is-6x6">
+                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div class="media-content">
+                      <p class="title is-4">John Smith</p>
+                      <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                  </div>
+
+                  <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br />
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        <!-- <section class="tengah">
-          <div class="blablabla">
-            <ul>
-              <li><a href="">link 1</a></li>
-              <li><a href="">link 2</a></li>
-              <li><a href="">link 3</a></li>
-              <li><a href="">link 4</a></li>
-              <li><a href="">link 5</a></li>
-              <li><a href="">link 6</a></li>
-            </ul>
-          </div>
-        </section> -->
-      </section>
-    </footer>
+      </main>
+      <footer></footer>
+    </section>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script>
+      bulmaCarousel.attach('#carousel-demo', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        autoplay: true,
+        pauseOnHover: false,
+        infinite: true,
+        navigation: false,
+        duration: 1200,
+      });
+    </script>
   </body>
 </html>
