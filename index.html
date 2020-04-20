@@ -3,252 +3,275 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Informatika</title>
+    <title>Informatika | Institut Teknologi Kalimantan</title>
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- <link rel="stylesheet" href="node_modules/bulma/css/bulma.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
   </head>
   <body>
-    <main class="wrapper">
+    <section>
       <header>
-        <section id="header-wrap">
-          <section id="logo">
-            <a href="index.html"><img src="assets/img/iflogo.png" alt="Informatika Institut Teknologi Kalimantan"/></a>
-          </section>
-          <nav class="navbar">
-            <ul class="menu-wrap">
-              <li class="menu-item">
-                <a href="pages/profilprodi.html" class="active">Profile Prodi</a>
-                <ul class="menu-sub">
-                  <li><a href="pages/sejarah.html">sejarah</a></li>
-                  <li><a href="pages/visi-misi.html">visi & misi</a></li>
-                  <li><a href="pages/Struktur.html">struktur organisasi</a></li>
-                  <li><a href="pages/akreditasi.html">akreditasi</a></li>
-                  <li><a href="pages/kerjasama.html">kerjasama</a></li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="#">Civitas</a>
-                <ul class="menu-sub">
-                  <li><a href="pages/dosen.html">Dosen</a></li>
-                  <li><a href="">Tenaga kependidikan</a></li>
-                  <li><a href="">Alumni</a></li>
-                  <li><a href="">himpunan</a></li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="">Akademik</a>
-                <ul class="menu-sub">
-                  <li><a href="">beasiswa</a></li>
-                  <li><a href="">prestasi</a></li>
-                  <li><a href="">Kurikulum</a></li>
-                  <li><a href="">Laboratorium</a></li>
-                  <li><a href="pages/biaya_kuliah.html">biaya kuliah</a></li>
-                  <li><a href="">Kalender Akademik</a></li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="">Pengabdian & Penelitian</a>
-                <ul class="menu-sub">
-                  <li><a href="">penelitian</a></li>
-                  <li><a href="">pengabdian pada masyarakat</a></li>
-                </ul>
-              </li>
-              <li class="menu-item">
-                <a href="">Info</a>
-                <ul class="menu-sub">
-                  <li><a href="">berita</a></li>
-                  <li><a href="">agenda</a></li>
-                  <li><a href="">artikel</a></li>
-                </ul>
-              </li>
-              <li class="menu-item"><a href="">Kontak</a></li>
-            </ul>
-          </nav>
-        </section>
-      </header>
-      <video autoplay muted loop class="backvideo">
-        <source src="assets/video/backvideo.mp4" video="video/mp4">
-      </video>
-      <div class="cover">
-        <div class="cover-overlay">
-          <h1>Selamat Datang</h1>
-          <p>di Website Prodi Informatika</p>
-        </div>
-      </div>
-      <section>
-        <div class="container-index">
-          <div class="pengumuman-main">
-            <div class="pengumuman">
-              <h1>Pengumuman</h1>              
-              <div class="box">
-                <div class="penerimaan-maba">
-                  <h3>Penerimaan Mahasiswa Baru</h3>
-                  <div class="content">
-                    <img src="assets/img/penerimaan_maba.jpeg" alt="">
-                  </div>
-                </div>
-                <div class="pendaftaran-mawapres">
-                  <h3>Pendaftaran Mahasiswa Berprestasi</h3>
-                  <div class="content">
-                    <img src="assets/img/mawapreslogo.jpg" alt="">
-                  </div>
-                </div>
-                <div class="beasiswa">
-                  <h3>Beasiswa</h3>
-                  <div class="content">
-                    <img src="assets/img/beasiswa.jpeg" alt="">
-                  </div>
-                </div>
-                <div class="lomba">
-                  <h3>Lomba</h3>
-                  <div class="content">
-                    <img src="assets/img/hackaton.png" alt="">
-                  </div>
-                </div>
-              </div>
-            </div>
+        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+          <div class="navbar__logo navbar-brand">
+            <a class="navbar-item" href="index.html">
+              <img src="assets/img/iflogo.png" />
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="nav-menu">
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+              <span aria-hidden="true"></span>
+            </a>
           </div>
-          <div class="news-agenda">
-            <div class="news">
-              <h1>Berita Terkini</h1>
-              <div class="news-box">
-                <div class="box">
-                  <div class="content">
-                    <a href="">
-                      <img src="assets/img/FGD2.jpg" alt="">
-                      <p class=judul-utama>FGD</p>
-                      <p class="waktu-pelaksanaan-news">20 Juni 2020 - 13:00</p>
-                      <p class="caption-news">Pelaksanaan FGD</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="content">
-                    <a href="#">
-                      <img src="assets/img/KULTAM2.jpeg" alt="">
-                      <p class=judul-utama>Kuliah Tamu</p>
-                      <p class="waktu-pelaksanaan-news">17 Mei 2020 - 08:30</p>
-                      <p class="caption-news">Pelaksanaan Kuliah Tamu</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="content">
-                    <a href="#">
-                      <img src="assets/img/FGD_2019.jpeg" alt="">
-                      <p class=judul-utama>Rapat Intenal</p>
-                      <p class="waktu-pelaksanaan-news">5 Agustus 2020 - 13:30</p>
-                      <p class="caption-news">Pelaksanaan Rapat Intenal</p>
-                    </a>
-                  </div>
-                </div>
-                <div class="box">
-                  <div class="content">
-                    <a href="">
-                      <img src="assets/img/telkomfest.jpg" alt="" height="90px">
-                      <p class=judul-utama>Pembicara</p>
-                      <p class="waktu-pelaksanaan-news">20 Juni 2020 - 13:00</p>
-                      <p class="caption-news">Pembicara di Acara Telkomfest</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="agenda">
-              <h1>Agenda</h1>
-              <div class="box-agenda">
-                <div class="box">
-                  <div class="content-agenda">
-                    <div class="left-side">
-                    </div>
-                    <div class="date">
-                      <h3>10</h3>
-                      <h3>NOV</h3>
-                    </div>
-                    <div class="main-content">
-                      <p>Acara .....</p>
-                      <p>Tempat : </p>
-                    </div>
-                  </div>  
-                  <div class="content-agenda">
-                    <div class="left-side">
-                    </div>
-                    <div class="date">
-                      <h3>10</h3>
-                      <h3>NOV</h3>
-                    </div>
-                    <div class="main-content">
-                      <p>Acara .....</p>
-                      <p>Tempat : </p>
-                    </div>
-                  </div>
-                  <div class="content-agenda">
-                    <div class="left-side">
-                    </div>
-                    <div class="date">
-                      <h3>10</h3>
-                      <h3>NOV</h3>
-                    </div>
-                    <div class="main-content">
-                      <p>Acara .....</p>
-                      <p>Tempat : </p>
-                    </div>
-                  </div>
-                  <div class="content-agenda">
-                    <div class="left-side">
-                    </div>
-                    <div class="date">
-                      <h3>10</h3>
-                      <h3>NOV</h3>
-                    </div>
-                    <div class="main-content">
-                      <p>Acara .....</p>
-                      <p>Tempat : </p>
-                    </div>
-                  </div>
-                  <div class="more-agenda">
-                    <a href="">Lihat agenda selengkapnya >>></a>
-                  </div>      
-                </div>
-              </div>
-            </div>
-          </div>
-          <footer id="footer">
-            <section class="footer-wrap">
-              <section class="bawah-logo">
-                <div id="logo">
-                  <img src="assets/img/unnamed.png" alt="Informatika Institut Teknologi Kalimantan" />
-                </div>
-                <div id="if">
-                  <h1>Informatika</h1>
-                  <p>Institut Teknologi Kalimantan</p>
-                </div>
-                <div id="alamat">
-                  <h1>Alamat:</h1>
-                  <p>Jl. Soekarno-Hatta Km. 15, Karang Joang, Balikpapan</p>
-                  <p>Kalimantan Timur, Indonesia</p>
-                </div>
-                <div id="kontak">
-                  <p><b>Telp: </b>08xxxxxx</p>
-                  <p><b>E-mail: </b>tawd@gaidaow.cmo</p>
-                </div>
-              </section>
-              <!-- <section class="tengah">
-                <div class="blablabla">
-                  <ul>
-                    <li><a href="">link 1</a></li>
-                    <li><a href="">link 2</a></li>
-                    <li><a href="">link 3</a></li>
-                    <li><a href="">link 4</a></li>
-                    <li><a href="">link 5</a></li>
-                    <li><a href="">link 6</a></li>
-                  </ul>
-                </div>
-              </section> -->
-            </section>
-          </footer>
-        </div>
-      </section>
 
+          <div id="nav-menu" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="nav-item-menu navbar-link">Profile Prodi</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="pages/sejarah.html">sejarah</a>
+                  <a class="navbar-item" href="pages/visi-misi.html">visi & misi</a>
+                  <a class="navbar-item" href="pages/Struktur.html">struktur organisasi</a>
+                  <a class="navbar-item" href="pages/akreditasi.html">akreditasi</a>
+                  <a class="navbar-item" href="pages/kerjasama.html">kerjasama</a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Civitas</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="pages/sejarah.html">dosen</a>
+                  <a class="navbar-item" href="pages/sejarah.html">Tenaga Kependidikan</a>
+                  <a class="navbar-item" href="pages/sejarah.html">alumni</a>
+                  <a class="navbar-item" href="pages/sejarah.html">himpunan</a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Akademik</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="pages/sejarah.html">beasiswa</a>
+                  <a class="navbar-item" href="pages/sejarah.html">prestasi</a>
+                  <a class="navbar-item" href="pages/sejarah.html">kurikulum</a>
+                  <a class="navbar-item" href="pages/sejarah.html">laboratorium</a>
+                  <a class="navbar-item" href="pages/sejarah.html">biaya kuliah</a>
+                  <a class="navbar-item" href="pages/sejarah.html">kalender akademik</a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">Pengabdian & Penelitian</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="pages/sejarah.html">penelitian</a>
+                  <a class="navbar-item" href="pages/sejarah.html">pengabdian pada masyarakat</a>
+                </div>
+              </div>
+              <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">info</a>
+                <div class="navbar-dropdown">
+                  <a class="navbar-item" href="pages/sejarah.html">berita</a>
+                  <a class="navbar-item" href="pages/sejarah.html">agenda</a>
+                  <a class="navbar-item" href="pages/sejarah.html">artikel</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="container is-marginless">
+        <section class="hero is-fullheight has-carousel is-mobile is-tablet">
+          <div id="carousel-demo" class="hero-carousel">
+            <div class="item-1">
+              <img src="assets/1.jpg" alt="" />
+            </div>
+            <div class="item-2">
+              <img src="assets/2.png" alt="" />
+            </div>
+            <div class="item-3">
+              <img src="assets/3.jpg" alt="" />
+            </div>
+            <div class="item-1">
+              <img src="assets/4.jpg" alt="" />
+            </div>
+            <div class="item-2" data-slides-to-scroll="1">
+              <img src="assets/5.jpg" alt="" />
+            </div>
+            <div class="item-3">
+              <img src="assets/6.jpg" alt="" />
+            </div>
+          </div>
+          <div class="hero-head"></div>
+          <div class="hero-body"></div>
+          <div class="hero-foot"></div>
+        </section>
+        <section class="container is-marginless">
+          <section class="section pengumuman">
+            <h1>Pengumuman</h1>
+            <div class="columns is-variable is-8">
+              <div class="column is-one-quarter">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-image">
+                      <figure class="image is-4by5">
+                        <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-4by5">
+                          <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">Pendaftaran Mahasiswa Baru</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-one-quarter">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-image">
+                      <figure class="image is-4by5">
+                        <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-4by5">
+                          <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                        </figure>
+                      </div>
+                      <div class="media-content">
+                        <p class="title is-4">Mahasiswa Berprestasi</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="column is-one-quarter">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-image">
+                      <figure class="image is-4by5">
+                        <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div class="media">
+                      <div class="media-content has-text-centered">
+                        <p class="title is-4">Beasiswa</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-one-quarter">
+                <div class="card">
+                  <div class="card-content">
+                    <div class="card-image">
+                      <figure class="image is-4by5">
+                        <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                      </figure>
+                    </div>
+                    <div class="media">
+                      <div class="media-left">
+                        <figure class="image is-4by5">
+                          <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                        </figure>
+                      </div>
+                      <div class="media-content has-text-centered">
+                        <p class="title is-4">Lomba</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="section konten">
+            <div class="tile is-ancestor">
+              <div class="tile is-vertical is-8 konten__berita">
+                <div class="tile">
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-white">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                      </figure>
+                      <p class="title">Forum Group Discussion</p>
+                      <p class="subtitle">Top box</p>
+                    </article>
+                    <article class="tile is-child notification is-white">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                      </figure>
+                      <p class="title">Kuliah Tamu</p>
+                      <p class="subtitle">Bottom box</p>
+                    </article>
+                  </div>
+                  <div class="tile is-parent is-vertical">
+                    <article class="tile is-child notification is-white">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                      </figure>
+                      <p class="title">Forum Group Discussion</p>
+                      <p class="subtitle">With an image</p>
+                    </article>
+                    <article class="tile is-child notification is-white">
+                      <figure class="image is-4by3">
+                        <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
+                      </figure>
+                      <p class="title">Kuliah Tamu</p>
+                      <p class="subtitle">With an image</p>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="tile is-parent konten__agenda">
+                <article class="tile is-child notification is-link">
+                  <div class="content">
+                    <p class="title">Agenda</p>
+                    <p class="subtitle">With even more content</p>
+                    <div class="content">
+                      <!-- Main container -->
+                      <div class="level is-mobile">
+                        <!-- Left side -->
+                        <div class="level-left">
+                          <div class="level-item">
+                            icon
+                          </div>
+                          <div class="level-item">
+                            10
+                          </div>
+                          </div>
+                        </div>
+
+                        <!-- Right side -->
+                        <div class="level-right">
+                          <p class="level-item"><strong>Acara.....</strong></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+      <footer></footer>
+    </section>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    <script>
+      bulmaCarousel.attach('#carousel-demo', {
+        slidesToScroll: 1,
+        slidesToShow: 1,
+        autoplay: true,
+        pauseOnHover: false,
+        infinite: true,
+        // navigation: false,
+        duration: 1200,
+      });
+    </script>
   </body>
 </html>
