@@ -5,6 +5,8 @@ import router from './router.js'
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 
+import './assets/style/_global.scss'
+
 Vue.use(Buefy,{
   defaultIconPack: 'mdi',
   defaultContainerElement: '#content'

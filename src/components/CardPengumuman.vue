@@ -34,6 +34,7 @@ export default {
   &:hover {
     transition: .1s ease;
     cursor: pointer;
+    box-shadow: 0 5px 15px 2px rgba($color: #555555, $alpha: .2);
     p{
       color: $primary;
       transition: .1s ease;

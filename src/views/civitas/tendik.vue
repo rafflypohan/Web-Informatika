@@ -1,21 +1,21 @@
 <template>
   <div class="container is-marginless">
-    <section class="section dosen">
-      <h1 class="title">Dosen</h1>
+    <section class="section tendik">
+      <h1 class="title">Tenaga Kependidikan</h1>
       <div>
-        <table-dosen/>
+        <table-tendik />
       </div>
     </section>
   </div>
 </template>
 
 <script>
-import TabelDosen from '../../components/TabelDosen.vue';
+import TabelTendik from "../../components/TabelTendik.vue";
 export default {
-  components:{
-    'table-dosen' : TabelDosen
+  components: {
+    "table-tendik": TabelTendik
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

@@ -19,9 +19,9 @@ export default {
     const data = [
       {
           id: 1,
-          nama: "Aditya Putra Pratama, S.Si, M.Si.",
+          nama: "Budi, S.Si, M.Si.",
           nip:"-" ,
-          email: "adityapp@lecturer.itk.ac.id"
+          email: "budi@tendik.itk.ac.id"
         },
         {
           id: 2,
@@ -91,7 +91,7 @@ export default {
         },
         {
           field: 'nama',
-          label: 'Nama Dosen',
+          label: 'Nama',
         },
         {
           field: 'nip',

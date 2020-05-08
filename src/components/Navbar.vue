@@ -1,32 +1,35 @@
 <template>
   <section>
-      <b-navbar :fixed-top="fixedTop" class="navbar">
-        <template slot="brand">
-          <b-navbar-item tag="router-link" :to="{ path: '/' }">
-            <img src="../assets/img/iflogo.png" alt="Logo Informatika ITK" />
-          </b-navbar-item>
-        </template>
-        <template slot="end">
-          <b-navbar-dropdown class="navbar__dropdown" hoverable label="Profil Prodi">
-            <b-navbar-item>Sejarah</b-navbar-item>
-            <b-navbar-item>Visi Misi</b-navbar-item>
-            <b-navbar-item>Struktur Organisasi</b-navbar-item>
-            <b-navbar-item>Akreditasi</b-navbar-item>
-            <b-navbar-item>Kerjasama</b-navbar-item>
-          </b-navbar-dropdown>
-          <b-navbar-dropdown class="navbar__dropdown" hoverable label="Civitas">
-            <b-navbar-item>Dosen</b-navbar-item>
-            <b-navbar-item>Tenaga Kependidikan</b-navbar-item>
-            <b-navbar-item>Alumni</b-navbar-item>
-            <b-navbar-item>Himpunan</b-navbar-item>
-          </b-navbar-dropdown>
-          <b-navbar-dropdown class="navbar__dropdown" hoverable label="Info">
-            <b-navbar-item href="#">About</b-navbar-item>
-            <b-navbar-item href="#">Contact</b-navbar-item>
-          </b-navbar-dropdown>
-        </template>
-      </b-navbar>
-    </section>
+    <b-navbar :fixed-top="fixedTop" class="navbar">
+      <template slot="brand">
+        <b-navbar-item tag="router-link" :to="{ path: '/' }">
+          <img src="../assets/img/iflogo.png" alt="Logo Informatika ITK" />
+        </b-navbar-item>
+      </template>
+      <template slot="end">
+        <b-navbar-dropdown class="navbar__dropdown" hoverable label="Profil Prodi">
+          <b-navbar-item tag="router-link" to="/profil-prodi/tentang-prodi">Tentang Prodi</b-navbar-item>
+          <b-navbar-item tag="router-link" to="/profil-prodi/visi-misi">Visi Misi</b-navbar-item>
+          <b-navbar-item
+            tag="router-link"
+            to="/profil-prodi/struktur-organisasi"
+          >Struktur Organisasi</b-navbar-item>
+          <b-navbar-item class="disabled">Akreditasi</b-navbar-item>
+          <b-navbar-item class="disabled">Kerjasama</b-navbar-item>
+        </b-navbar-dropdown>
+        <b-navbar-dropdown class="navbar__dropdown" hoverable label="Civitas">
+          <b-navbar-item tag="router-link" to="/civitas/dosen">Dosen</b-navbar-item>
+          <b-navbar-item tag="router-link" to="/civitas/tenaga-kependidikan">Tenaga Kependidikan</b-navbar-item>
+          <b-navbar-item class="disabled">Alumni</b-navbar-item>
+          <b-navbar-item class="disabled">Himpunan</b-navbar-item>
+        </b-navbar-dropdown>
+        <b-navbar-dropdown class="navbar__dropdown disabled" hoverable label="Info">
+          <b-navbar-item href="#">About</b-navbar-item>
+          <b-navbar-item href="#">Contact</b-navbar-item>
+        </b-navbar-dropdown>
+      </template>
+    </b-navbar>
+  </section>
 </template>
 
 <script>
@@ -57,6 +60,13 @@ export default {
       font-size: 0.88rem;
       text-transform: capitalize;
     }
+  }
+  .disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    opacity: 0.4;
+    
+   
   }
 }
 </style>
