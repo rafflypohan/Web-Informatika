@@ -6,7 +6,7 @@
           <div class="columns">
             <div class="column">
               <figure>
-                <img src="../assets/img/cn.png" alt="">
+                <img src="../assets/img/cs.png" alt="">
               </figure>
             </div>
             <div class="column">
