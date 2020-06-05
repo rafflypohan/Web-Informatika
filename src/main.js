@@ -6,6 +6,7 @@ import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 
 import './assets/style/_global.scss'
+import './assets/style/_navbar.scss'
 
 Vue.use(Buefy,{
   defaultIconPack: 'mdi',

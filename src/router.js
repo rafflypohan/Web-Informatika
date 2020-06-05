@@ -3,14 +3,31 @@ import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 export default new VueRouter({
+  scrollBehavior(){
+    window.scrollTo(0,0);
+  },
   mode: 'history',
   routes: [
     
     {
       path: '/',
-      name: 'Beranda',
+      name: 'beranda',
       meta: {title: 'Beranda'},
       component: () => import('./views/Beranda.vue')
+    },
+    {
+      path: '/berita/:berita',
+      name: 'berita',
+      props: true,
+      meta: {title: 'Berita'},
+      component: () => import('./views/Berita.vue')
+    },
+    {
+      path: '/pengumuman/:pengumuman',
+      name: 'pengumuman',
+      props: true,
+      meta: {title: 'Informasi'},
+      component: () => import('./views/Pengumuman.vue')
     },
     {
       path: '/profil-prodi/tentang-prodi',
@@ -26,12 +43,7 @@ export default new VueRouter({
       meta: {title: 'Visi Misi'},
       component:() => import('./views/profil-prodi/visi-misi.vue')
     },
-    {
-      path: '/profil-prodi/visi-misi',
-      name: 'visi-misi',
-      meta: {title: 'Visi Misi'},
-      component:() => import('./views/profil-prodi/visi-misi.vue')
-    },
+  
     {
       path: '/profil-prodi/struktur-organisasi',
       name: 'struktur-organisasi',
@@ -41,7 +53,7 @@ export default new VueRouter({
     {
       path: '/civitas/dosen',
       name: 'dosen',
-      meta:{title: 'Dosen'},
+      meta:{title: 'Dosen '},
       component:()=> import('./views/civitas/dosen.vue')
     },
     {

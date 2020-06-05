@@ -1,174 +1,153 @@
 <template>
   <div class="container is-marginless">
-    <section>
-      <b-carousel
-        :indicator="indicator"
-        :arrow="arrow"
-        :pause-hover="pauseHover"
-        :pause-info="pauseInfo"
-        class="is-fullheight"
-      >
-        <b-carousel-item v-for="(carousel, i) in carousels" :key="i">
-          <section :class="`hero is-fullheight-with-navbar is-${carousel.color} is-bold`">
-            <div class="hero-body has-text-centered">
-              <h1 class="title">{{carousel.text}}</h1>
-            </div>
-          </section>
-        </b-carousel-item>
-      </b-carousel>
+    <section class="hero bg-img">
+      <div class="hero-body is-paddingless">
+        <div class="hero-body-title has-text-left">
+          <h1 class="title">Selamat Datang</h1>
+          <h2 class="subtitle">
+            Di Website Program Studi Informatika
+            <br />Institut Teknologi Kalimantan
+          </h2>
+        </div>
+        <figure class="image">
+          <img src="../assets/img/isometric.png" alt />
+        </figure>
+      </div>
     </section>
     <section class="container">
       <section class="section">
-        <div class="columns">
-          <div class="column is-one-quarter">
-            <figure class="image">
-              <img src="../assets/img/unnamed.png" alt="Logo Informatika" />
-            </figure>
-          </div>
-          <div class="column has-text-justified if">
-            <h1 class="title">Informatika</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora!</p>
-          </div>
-        </div>
-      </section>
-      <section class="section pengumuman has-background-light">
-        <h1>Pengumuman</h1>
-        <div class="columns is-variable is-8">
-          <div class="column is-one-quarter" v-for="p in pengumuman" :key="p.id">
-            <card-pengumuman v-bind="p" />
-          </div>
-        </div>
-      </section>
-
-      <section class="konten">
-        <div class="tile is-ancestor">
-          <div class="tile is-vertical is-8 konten__berita" >
-            <div class="tile">
-              <div class="tile is-parent is-vertical" v-for="item in 2" :key="item">
-                <article class="tile is-child box is-white" v-for="b in berita" :key="b.id">
-                  <card-berita v-bind="b" />
-                </article>
+        <div class="hero is-bold is-medium">
+          <div class="hero-body">
+            <div class="columns">
+              <div class="column is-one-quarter">
+                <figure class="image">
+                  <img src="../assets/img/unnamed.png" alt="Logo Informatika" />
+                </figure>
+              </div>
+              <div class="column has-text-justified if">
+                <h1 class="title">Informatika</h1>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora! Lorem ipsum
+                  dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora!
+                </p>
               </div>
             </div>
-            
-          </div>
-          <div class="tile is-parent konten__agenda">
-            <article class="tile is-child box">
-              <div class="content">
-                <p class="title">Agenda</p>
-                <p class="subtitle">With even more content</p>
-                <div class="content">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Morbi maximus, leo sit amet vehicula
-                    eleifend, nunc dui porta orci, quis semper odio felis ut quam.
-                  </p>
-                </div>
-              </div>
-            </article>
           </div>
         </div>
       </section>
+      <section class="pengumuman">
+        <h1>Informasi</h1>
+        <div class="columns is-multiline is-1-mobile is-variable is-2">
+          <div class="column is-one-third" v-for="p in pengumuman.pengumuman" :key="p.id">
+            <card-pengumuman v-bind:pengumuman="p" />
+          </div>
+        </div>
+      </section>
+      <div class="columns berita-agenda">
+        <div class="berita column  is-two-thirds is-paddingless">
+          <h1 class="title has-text-left">Berita</h1>
+          <div class="columns is-multiline is-1-mobile ">
+            <div class="column is-half" v-for="b in berita.berita" :key="b.id">
+              <card-berita v-bind:berita="b" />
+            </div>
+          </div>
+        </div>
+        <div class="agenda column is-paddingless ">
+          <h1 class="title has-text-left">Agenda</h1>
+          <div class="columns is-mobile is-multiline">
+            <div class="column is-full has-text-left" v-for="a in 4" :key="a">
+              <p class="notification">AOEE</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 </template>
 
 <script>
-import CardPengumuman from "../components/CardPengumuman.vue";
-import CardBerita from "../components/CardBerita.vue";
-// import CardAgenda from "../components/CardAgenda.vue";
+import CardPengumuman from '../components/CardPengumuman.vue'
+import CardBerita from '../components/CardBerita.vue'
+// import CardMinat from '../components/CardMinat.vue'
+import DataBerita from '../data/berita.json'
+import DataPengumuman from "../data/pengumuman.json"
 export default {
+  name: 'Beranda',
   components: {
-    "card-pengumuman": CardPengumuman,
-    "card-berita": CardBerita
-    // "card-agenda": CardAgenda
+    'card-pengumuman': CardPengumuman,
+    'card-berita': CardBerita,
+    // 'card-minat': CardMinat
   },
   data() {
     return {
-      indicator: false,
-      arrow: false,
-      pauseHover: false,
-      pauseInfo: false,
-      carousels: [
-        { text: "Slide 1", color: "dark" },
-        { text: "Slide 2", color: "info" },
-        { text: "Slide 3", color: "success" },
-        { text: "Slide 4", color: "warning" },
-        { text: "Slide 5", color: "danger" }
-      ],
-      pengumuman: [
-        {
-          id: 1,
-          title: "Pendaftaran Mahasiswa Baru"
-        },
-        {
-          id: 2,
-          title: "Pengumuman Mahasiswa Berprestasi"
-        },
-        {
-          id: 3,
-          title: "Beasiswa"
-        },
-        {
-          id: 4,
-          title: "Lomba"
-        }
-      ],
-      berita: [
-        {
-          id: 1,
-          title: "FGD",
-          waktu: "20 Juni 2020 - 13:00 AM",
-          ket:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quaerat?"
-        },
-        {
-          id: 2,
-          title: "oke",
-          waktu: "01 Maret 2020 - 12:00 AM",
-          ket:
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quaerat?"
-        },
-        // {
-        //   id: 3,
-        //   title: "iaa",
-        //   waktu: "20 Juni 2020 - 13:00 AM",
-        //   ket:
-        //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quaerat?"
-        // },
-        // {
-        //   id: 4,
-        //   title: "mantap",
-        //   waktu: "20 April 2020 - 13:00 AM",
-        //   ket:
-        //     "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, quaerat?"
-        // }
-      ]
+      berita: DataBerita,
+      pengumuman: DataPengumuman
     };
-  }
+  },
+
 };
 </script>
 
 <style lang="scss" scoped>
-@import "../assets/style/_global.scss";
-
+@import '../assets/style/_global.scss';
 .container {
   max-width: 1920px;
+  top: -3.4rem;
+
+  .bg-img {
+    .hero-body {
+      &-title {
+        $top: 19.5rem;
+        $left: 1.8rem;
+        $index: 10;
+        $pos: absolute;
+        .title {
+          position: $pos;
+          font-size: 2.5rem;
+          top: $top;
+          left: $left;
+          color: #eee;
+          font-weight: bolder;
+          z-index: $index;
+          font-family: $font-heading;
+        }
+        .subtitle {
+          position: $pos;
+          font-size: 2rem;
+          left: $left;
+          color: #173faa;
+          top: $top + 6rem;
+          z-index: $index;
+          font-family: $family-primary;
+          font-weight: 500;
+        }
+      }
+    }
+  }
 
   .container {
+    $padding: 1.5rem;
     text-align: center;
 
     .if {
-      padding: 1.5rem 4.5rem 0 1.5rem;
-      h1{
+      padding: $padding 2rem 0 $padding;
+      h1 {
         font-family: $font-heading;
+        font-size: $padding * 2;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: $padding - 0.3;
       }
     }
 
     .pengumuman {
-      // background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+      background-image: linear-gradient(to bottom right, #17459c, #0072da);
       text-align: center;
-      // color: seashell;
+      color: seashell;
       height: auto;
+      padding: 3rem;
 
       > h1 {
         padding: 3rem;
@@ -179,11 +158,32 @@ export default {
       }
     }
 
-    .konten{
-      padding: 1.5rem;
-      // &__berita{
-      //   width: 20rem;
-      // }
+    .berita-agenda {
+      margin-top: 0;
+      .berita {
+        // width: 100%;
+        border-right: 2px solid #eee;
+        h1 {
+          padding: $padding $padding * 2 0;
+        }
+        .columns {
+          padding: 0 $padding * 2 $padding;
+        }
+      }
+
+      .agenda {
+        h1 {
+          padding: $padding $padding * 1.5 0;
+        }
+        .columns {
+          padding: 0 $padding * 1.5 $padding;
+
+          .notification {
+            background-color: #ECF3FB;
+            border-radius: 2px;
+          }
+        }
+      }
     }
   }
 }

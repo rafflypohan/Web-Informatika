@@ -7,8 +7,12 @@
         </div>
       </div>
     </section>-->
+    <Header/>
     <section class="section if">
       <div class="columns">
+        <div class="column is-one-quarter">
+          <Menu/>
+        </div>
         <div class="column is-one-quarter">
           <figure class="image">
             <img src="../../assets/img/unnamed.png" alt="Logo Informatika" />
@@ -46,7 +50,7 @@
       </div>
     </section>
     <section class="section sejarah">
-      <h1 class="title">Sejarah</h1>
+      <h1 class="title has-text-left">Sejarah</h1>
       <p
         class="has-text-justified"
       >Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora!</p>
@@ -54,14 +58,22 @@
     <section></section>
   </section>
 </template>
+
 <style lang="scss" scoped>
 @import "../../assets/style/_global.scss";
 h1 {
   font-family: $font-heading;
 }
 </style>
+
 <script>
+import Header from '../../components/Header'
+import Menu from '../../components/Menu'
 export default {
+  components:{
+    Header,
+    Menu
+  },
   data() {
     const data = [
       {

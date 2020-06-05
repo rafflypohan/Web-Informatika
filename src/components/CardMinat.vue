@@ -3,18 +3,18 @@
     <div class="card">
       <div class="card-image">
         <figure class="image is-4by3">
-          <img v-bind:src="require(`../assets/img/${berita.images}`)" alt="berita.title" />
+          <img src="../assets/img/beasiswa.jpeg" alt="eee" />
         </figure>
       </div>
       <div class="card-content">
         <div class="media">
           <div class="media-content">
             <p class="date is-6 has-text-justified"><b-icon icon="calendar" size="is-small"></b-icon> {{berita.datetime}} </p>
-            <p class="title is-capitalize">{{berita.descTitle}}</p>
+            <p class="title is-capitalize">eee</p>
             
-            <p class="subtitle has-text-justified">{{berita.info}}</p>
+            <p class="subtitle has-text-justified">eeee</p>
             <p class="has-text-right">
-              <router-link tag="a" v-bind:to="berita.link">Lihat Selengkapnya <b-icon icon="arrow-right" size="is-small"></b-icon></router-link>
+              <router-link tag="a">Lihat Selengkapnya <b-icon icon="arrow-right" size="is-small"></b-icon></router-link>
             </p>
           </div>
         </div>
@@ -24,7 +24,7 @@
 </template>
 <script>
 export default {
-  props: ["berita"],
+  props: ["minat"],
   methods:{
     chgRoute(){
       this.$router.push(this.link)

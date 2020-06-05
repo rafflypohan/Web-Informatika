@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import 'global';
+
+$white: #eee;
+$white-invert: findColorInvert($white);
+$white-darker: #ccc;
+$text-link: #17439B;
+$colors: (
+  'white': (
+    $white,
+    $white-invert,
+  ),
+);
+
+// $navbar-item-img-max-height: 4rem;
+$navbar-dropdown-item-hover-color: $text-link;
+// $navbar-dropdown-arrow: #eee;
+// $navbar-item-color: #eee;
+$navbar-dropdown-border-top: 2px solid #0072da;
+// $navbar-item-hover-color: #ccc;
+$navbar-item-hover-background-color: transparent;
+
+nav.navbar {
+  background-color: transparent;
+  transition: 0.2s ease;
+  padding: 1vw 4vw;
+
+  img{
+    max-height: 4rem;
+  }
+
+   .navbar-item {
+    font-weight: 700;
+    font-size: 0.88rem;
+    letter-spacing: 0.04rem;
+    text-transform: uppercase;
+    a{
+      color: #eee;
+    }
+    .navbar-link::after{
+      border-color: #eee;
+    }
+
+    .navbar-dropdown {
+      
+      a {
+        font-weight: 500;
+        font-size: 0.88rem;
+        text-transform: capitalize;
+        color: rgb(59, 59, 59);
+
+        &:hover {
+          color: #095FC0;
+        }
+      }
+    }
+  }
+}
+.navbar.shrink {
+  // box-shadow: 0px 1px 6px 0px rgba(170, 168, 168, 0.8);
+  box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.15);
+  padding: .3vw 2vw;
+  background: #fff;
+  transition: 0.2s ease;
+
+  img{
+    max-height: 2.7rem;
+  }
+
+  .navbar-item{
+    font-size: .82rem;
+    $grey: #444;
+    a{
+      color: $grey;
+
+      &:hover, &:active{
+        color: $text-link;
+      }
+    }
+    .navbar-link::after{
+      border-color: #0072da;
+    }
+  }
+
+}
+
+@import '~bulma/sass/utilities/_all';
+@import '~bulma';
+@import '~buefy/src/scss/buefy';

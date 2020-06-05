@@ -2,19 +2,15 @@
   <section>
     <div class="card" aria-id="contentIdForA11y3">
       <div class="card-content">
-        <div class="card-image">
-          <figure class="image is-4by5">
-            <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
-          </figure>
-        </div>
         <div class="media">
           <div class="media-left">
-            <figure class="image is-4by5">
+            <figure class="image is-64x64">
               <img src="https://bulma.io/images/placeholders/480x600.png" alt="Placeholder image" />
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4" >{{ title }}</p>
+            <p class="title" >{{ pengumuman.title }}</p>
+            <p class="subtitle">{{pengumuman.info}}</p>
           </div>
         </div>
       </div>
@@ -23,25 +19,40 @@
 </template>
 <script>
 export default {
-  props:['title'],
+  props:['pengumuman'],
+  methods:{
+    chgRoute(){
+      this.$router.push(this.link)
+    }
+  }
 }
 </script>
 <style lang="scss" scoped>
 @import "../assets/style/_global.scss";
 .card {
-  height: 26.5rem;
-  transition: .1s ease;
-  &:hover {
-    transition: .1s ease;
-    cursor: pointer;
-    box-shadow: 0 5px 15px 2px rgba($color: #555555, $alpha: .2);
-    p{
-      color: $primary;
-      transition: .1s ease;
+  height: 7rem;
+  transition: .2s all ease;
+  box-shadow: none;
+  border-radius: 2px;
+  .media{
+    &-content{
+      p.title{
+        font-size: 1.2rem;
+      }
+
+      p.subtitle{
+        font-size: .95rem;
+      }
     }
-    // img {
-    //   transition: 0s ease;
-    // }
+  }
+  &:hover {
+    transition: .2s all ease;
+    cursor: pointer;
+    background-color: #ffffffeb;
+    
+    p.title{
+      color: $primary;
+    }
   }
 }
 </style>

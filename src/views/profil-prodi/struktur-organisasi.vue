@@ -1,6 +1,6 @@
 <template>
   <section class="section">
-    <section class="hero is-bold">
+    <section class="hero is-bold has-text-justified">
       <div class="hero-body">
         <div class="container">
           <h1 class="title">Stuktur Organisasi</h1>

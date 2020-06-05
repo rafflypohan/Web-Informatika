@@ -2,13 +2,13 @@
 
 
 // Import a Google Font
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,800&display=swap');
 // Set your brand colors
 $beige-light: #d0d1cd;
 $beige-lighter: #eff0eb;
-$grey-light: $beige-light;
+$white: #fff;
 $darkgrey: #4a4a4a;
 $primary: #0072ff;
 $primary-invert: findColorInvert($primary);
@@ -22,19 +22,19 @@ $colors: (
 );
 
 // Update Bulma's global variables
-$family-sans-serif: 'Roboto', sans-serif;
-$font-heading: 'Raleway';
+$family-primary: 'Roboto',Helvetica, Arial, sans-serif;
+$font-heading: 'Raleway', $family-primary;
+$font-heading-two: 'Open Sans', $family-primary;
 $link: $primary;
 $link-invert: $primary-invert;
 $link-focus-border: $primary;
+
+$card-content-padding: .9rem;
+$notification-padding: 1rem;
+
+
 // Update some of Bulma's component variables
 
-$navbar-item-img-max-height: 4rem;
-$navbar-dropdown-item-hover-color: $link;
-$navbar-dropdown-border-top: 2px solid $link;
-$navbar-dropdown-arrow: $primary;
-$navbar-item-color: $darkgrey;
-$navbar-dropdown-border-top: 2px solid $link;
 // $footer-background-color: $darkgrey;
 // $radius-large: 2px;
 // $card-content-padding: 1rem;
