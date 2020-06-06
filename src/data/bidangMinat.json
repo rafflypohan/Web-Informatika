@@ -1,8 +1,118 @@
 {
-    "bidangMinat":[
+  "bidangMinat": [
+    {
+      "id": 0,
+      "name": "Computer Network",
+      "images": "cne.png",
+      "subtitle": "Bidang minat Computer Network",
+      "link": "bidang-minat/computer-network",
+      "desc": "Computer Network adalah sebuah sistem yang menyambungkan komputer antar komputer maupun dengan perangkat yang lain (salah satu contohnya adalah printer) melalui media komunikasi sehingga data dan informasi dapat saling tersalurkan antar komputer maupun dengan perangkat. Selain itu, dikenal juga istilah bandwidth, yaitu kapasitas transmisi dari suatu jaringan, biasanya dilihat dari bit per detik.",
+      "matkul": [
         {
-            "id": 0,
-            "name": "Computer Science"
+          "kode": "IF301",
+          "name": "Jaringan Nirkabel"
+        },
+        {
+          "kode": "IF302",
+          "name": "Komputasi Awan"
+        },
+        {
+          "kode": "IF303",
+          "name": "Teknologi Antar Jaringan"
+        },
+        {
+          "kode": "IF304",
+          "name": "Jaringan Multimedia"
+        },
+        {
+          "kode": "IF305",
+          "name": "Komputasi Grid dan Parallel"
+        },
+        {
+          "kode": "IF306",
+          "name": "Komputasi Pervasif dan Jaringan Sensor"
+        },
+        {
+          "kode": "IF307",
+          "name": "Perancangan Keamanan Sistem dan Jaringan"
         }
-    ]
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Computer Science",
+      "images": "csc.png",
+      "subtitle": "Bidang minat Computer Science",
+      "link": "bidang-minat/computer-science",
+      "desc": "Computer Science adalah ilmu yang mempelajari tentang komputer dan sistem komputasi. Orang yang bergelut di bidang ini biasanya melakukan proses interaksi dengan data yang kemudian disajikan ke dalam format program.",
+      "matkul": [
+        {
+          "kode": "IF308",
+          "name": "Visi Komputer"
+        },
+        {
+          "kode": "IF309",
+          "name": "Penambangan Data"
+        },
+        {
+          "kode": "IF310",
+          "name": "Komputasi Biomedik"
+        },
+        {
+          "kode": "IF311",
+          "name": "Permodelan dan Simulasi"
+        },
+        {
+          "kode": "IF312",
+          "name": "Sistem Temu Kembali Informasi"
+        },
+        {
+          "kode": "IF313",
+          "name": "Big data"
+        },
+        {
+          "kode": "IF314",
+          "name": "Analisis Data Multivariat"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Software Engineering",
+      "images": "sen.png",
+      "subtitle": "Bidang minat Software Engineering",
+      "link": "bidang-minat/software-engineering",
+      "desc": "Software engineering adalah proses analisis kebutuhan dan desain pengguna, konstruksi dan uji aplikasi yang akan memenuhi kebutuhan-kebutuhan tersebut melalui penggunaan bahasa pemrograman. Secara garis besar, software engineering bisa diartikan sebagai penerapan prinsip-prinsip teknik pengembangan perangkat lunak.",
+      "matkul": [
+        {
+          "kode": "IF315",
+          "name": "Arsitektur Perangkat Lunak"
+        },
+        {
+          "kode": "IF316",
+          "name": "Penjaminan Mutu Perangkat Lunak"
+        },
+        {
+          "kode": "IF317",
+          "name": "Sistem Enterprise"
+        },
+        {
+          "kode": "IF318",
+          "name": "Realitas Virtual dan Augmentasi"
+        },
+        {
+          "kode": "IF319",
+          "name": "Basis Data Terdisitribusi"
+        },
+        {
+          "kode": "IF320",
+          "name": "Pemrograman Perangkat Bergerak"
+        },
+        {
+          "kode": "IF321",
+          "name": "Pengembangan Permainan"
+        }
+      ]
+    }
+  ]
 }

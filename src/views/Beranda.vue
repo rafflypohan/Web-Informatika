@@ -27,24 +27,37 @@
               <div class="column has-text-justified if">
                 <h1 class="title">Informatika</h1>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora! Lorem ipsum
-                  dolor sit, amet consectetur adipisicing elit. Dolor ducimus ipsam saepe voluptatum ab ullam voluptatibus quod, quam, magnam iste excepturi esse assumenda quae eveniet distinctio atque nostrum iusto? Tempora!
-                </p>
+                  Lulusan Prodi Informatika ITK diharapkan memiliki kompetensi dalam bidang dasar informatika, memiliki keahlian dalam pemrograman komputer serta mampu mendayagunakan, mengevaluasi dan mengidentifikasi pengembangan sistem berbasis komputer.
+                </p><br>
+                <b-button class="button">Selengkapnya</b-button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="pengumuman">
-        <h1>Informasi</h1>
+      <section class="informasi">
+        <h1 class="has-text-left is-paddingless">Informasi</h1>
         <div class="columns is-multiline is-1-mobile is-variable is-2">
-          <div class="column is-one-third" v-for="p in pengumuman.pengumuman" :key="p.id">
-            <card-pengumuman v-bind:pengumuman="p" />
+          <div class="column is-one-third" v-for="i in informasi.informasi" :key="i.id">
+            <router-link v-bind:to="i.link">
+              <card-informasi v-bind:informasi="i" />
+            </router-link>
           </div>
         </div>
       </section>
+      <section class="minat">
+        <h1 class="title has-text-left is-paddingless">Bidang Minat</h1>
+        <div class="columns is-multiline is-1-mobil is-variable is-8">
+          <div class="column is-3" v-for="m in minat.bidangMinat" :key="m.id">
+            <router-link v-bind:to="m.link">
+              <card-minat v-bind:minat="m"/>
+            </router-link>
+          </div>
+        </div>
+      </section>
+
       <div class="columns berita-agenda">
-        <div class="berita column  is-two-thirds is-paddingless">
+        <div class="berita column is-two-thirds is-paddingless">
           <h1 class="title has-text-left">Berita</h1>
           <div class="columns is-multiline is-1-mobile ">
             <div class="column is-half" v-for="b in berita.berita" :key="b.id">
@@ -52,11 +65,22 @@
             </div>
           </div>
         </div>
-        <div class="agenda column is-paddingless ">
-          <h1 class="title has-text-left">Agenda</h1>
+
+        <div class="rightbar column is-multiline is-paddingless ">
+          <h1 class="pengumuman title has-text-left">Pengumuman</h1>
           <div class="columns is-mobile is-multiline">
-            <div class="column is-full has-text-left" v-for="a in 4" :key="a">
-              <p class="notification">AOEE</p>
+            <div class="column is-full has-text-left" v-for="p in 1" :key="p">
+              <p class="notification">ITK akan mengadakan roadshow</p>
+              <!-- <p class="date"> <b-icon icon="calendar" size="is-small"></b-icon> 20 September 2020</p> -->
+              <!-- <router-link>
+                <card-pengumuman/>
+              </router-link> -->
+            </div>
+          </div>
+          <h1 class="agenda title has-text-left">Agenda</h1>
+          <div class="columns is-mobile is-multiline">
+            <div class="column is-full has-text-left" v-for="a in 1" :key="a">
+              <p class="notification">Makrab IF</p>
             </div>
           </div>
         </div>
@@ -66,22 +90,26 @@
 </template>
 
 <script>
-import CardPengumuman from '../components/CardPengumuman.vue'
+import CardInformasi from '../components/CardInformasi.vue'
 import CardBerita from '../components/CardBerita.vue'
-// import CardMinat from '../components/CardMinat.vue'
+// import CardPengumuman from '../components/CardPengumuman.vue'
+import CardMinat from '../components/CardMinat.vue'
 import DataBerita from '../data/berita.json'
-import DataPengumuman from "../data/pengumuman.json"
+import DataInformasi from "../data/informasi.json"
+import DataMinat from "../data/bidangMinat.json"
 export default {
   name: 'Beranda',
   components: {
-    'card-pengumuman': CardPengumuman,
+    'card-informasi': CardInformasi,
     'card-berita': CardBerita,
-    // 'card-minat': CardMinat
+    // 'card-pengumuman': CardPengumuman
+    'card-minat': CardMinat
   },
   data() {
     return {
-      berita: DataBerita,
-      pengumuman: DataPengumuman
+      'berita': DataBerita,
+      'informasi': DataInformasi,
+      'minat': DataMinat
     };
   },
 
@@ -140,18 +168,44 @@ export default {
       p {
         font-size: $padding - 0.3;
       }
+      .button{
+        transition: .2s ease;
+        background-color: #173faa;
+        box-shadow: 0 4px 16px 0 rgba(23, 63, 171, .15);
+        color: #eee;
+        border: none;
+        &:hover{
+          box-shadow: 0 10px 20px 0 rgba(23, 63, 171, .35);
+          transition: .2s ease;
+        }
+        &:active{
+          box-shadow: 0 4px 16px 0 rgba(23, 63, 171, .15);
+          background-color: #12328b;
+        }
+      }
     }
 
-    .pengumuman {
+    .informasi {
       background-image: linear-gradient(to bottom right, #17459c, #0072da);
       text-align: center;
       color: seashell;
       height: auto;
-      padding: 3rem;
+      padding: 4.5rem $padding*2;
 
       > h1 {
-        padding: 3rem;
-        font-size: 2.5rem;
+        padding: 1rem 0 !important;
+        font-size: 2rem;
+        margin-top: -40px;
+        font-family: $font-heading;
+        font-weight: 700;
+      }
+    }
+
+    .minat{
+      padding: 6rem $padding*2;
+      >h1{
+        padding: 1rem 0 0 !important;
+        font-size: 2rem;
         margin-top: -40px;
         font-family: $font-heading;
         font-weight: 700;
@@ -160,6 +214,7 @@ export default {
 
     .berita-agenda {
       margin-top: 0;
+      padding: 0 1rem;
       .berita {
         // width: 100%;
         border-right: 2px solid #eee;
@@ -171,7 +226,7 @@ export default {
         }
       }
 
-      .agenda {
+      .rightbar{
         h1 {
           padding: $padding $padding * 1.5 0;
         }
@@ -183,7 +238,13 @@ export default {
             border-radius: 2px;
           }
         }
+
+        .agenda{
+          padding-top: 0;
+        }
       }
+
+      
     }
   }
 }

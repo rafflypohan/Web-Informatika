@@ -3,19 +3,14 @@
     <div class="card">
       <div class="card-image">
         <figure class="image is-4by3">
-          <img src="../assets/img/beasiswa.jpeg" alt="eee" />
+          <img v-bind:src="require(`../assets/img/${minat.images}`)" alt="minat.title" />
         </figure>
       </div>
       <div class="card-content">
         <div class="media">
           <div class="media-content">
-            <p class="date is-6 has-text-justified"><b-icon icon="calendar" size="is-small"></b-icon> {{berita.datetime}} </p>
-            <p class="title is-capitalize">eee</p>
-            
-            <p class="subtitle has-text-justified">eeee</p>
-            <p class="has-text-right">
-              <router-link tag="a">Lihat Selengkapnya <b-icon icon="arrow-right" size="is-small"></b-icon></router-link>
-            </p>
+            <p class="title is-capitalize">{{minat.name}}</p>
+            <p class="subtitle has-text-left">{{minat.subtitle}}</p>
           </div>
         </div>
       </div>
@@ -25,24 +20,27 @@
 <script>
 export default {
   props: ["minat"],
-  methods:{
-    chgRoute(){
-      this.$router.push(this.link)
+  methods: {
+    chgRoute() {
+      this.$router.push(this.link);
     }
   }
 };
 </script>
 <style lang="scss" scoped>
-@import '../assets/style/global';
+@import "../assets/style/global";
 $radius: 2px;
 .card {
   transition: 0.2s all ease;
   box-shadow: 0 4px 16px 0px rgba(0, 0, 0, 0.15);
   border-radius: $radius;
-  // height: 33rem !important;
+  border-radius: 1px solid #eee;
+  // height: 25rem !important;
 
   &:hover {
     transition: 0.2s all ease;
+    box-shadow: 0 8px 28px 4px rgba(0, 0, 0, 0.15);
+    transform: scale(1.01);
     // background: #ECF3FB;
   }
 
@@ -56,16 +54,17 @@ $radius: 2px;
     .media {
       &-content {
         padding: 0.5rem;
-        p {
+        .link {
           a {
             color: #0072da;
+            margin-top: 20px;
             &:hover {
               color: #0265c2;
               text-decoration: underline;
             }
           }
         }
-        .title{
+        .title {
           font-size: 1.2rem;
           font-weight: bold;
           font-family: $font-heading-two;
@@ -74,9 +73,10 @@ $radius: 2px;
           margin: -0.8rem 0 1.6rem 0;
           font-size: 1rem;
         }
-        .date{
-          margin: -0.5rem 0 .5rem 0;
-          font-size: .8rem;
+        .date,
+        .tek {
+          margin: -0.3rem 0 0.5rem 0;
+          font-size: 0.8rem;
         }
       }
     }

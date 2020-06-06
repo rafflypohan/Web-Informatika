@@ -1,21 +1,31 @@
 <template>
-  <div class="container is-marginless">
-    <section class="section dosen">
-      <h1 class="title">Dosen</h1>
-      <div>
-        <table-dosen/>
-      </div>
-    </section>
-  </div>
+  <section>
+    <Header v-bind:title="title" />
+    <div class="container is-marginless">
+      <section class="section dosen">
+        <h1 class="title">Dosen</h1>
+        <div>
+          <table-dosen />
+        </div>
+      </section>
+    </div>
+  </section>
 </template>
 
 <script>
-import TabelDosen from '../../components/TabelDosen.vue';
+import TabelDosen from "../../components/TabelDosen.vue";
+import Header from "../../components/Header.vue";
 export default {
-  components:{
-    'table-dosen' : TabelDosen
+  components: {
+    "table-dosen": TabelDosen,
+    Header
+  },
+  data() {
+    return {
+      title: "Dosen"
+    };
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

@@ -15,7 +15,9 @@
   background: #0072da;
   color: #fff;
   box-shadow: 0 8px 16px 0 rgba(0, 114, 218,.2);
-
+  &:hover{
+    background: #027aeb;
+  }
   &:active{
     background: #0067c7;
   }
@@ -24,15 +26,17 @@
 <script>
 export default {
   methods:{
+    // ini buat fungsi kalo diklik dia akan kembali ke atas
       toTop(){
           window.scrollTo(0,0);
       }
   },
   mounted() {
+    // ini buat munculin tombol nya kalo scrollToTopnya lebih dari 1600
     this.$nextTick(function() {
       window.addEventListener('scroll', function() {
         const button = document.getElementById('btn');
-        let top = 1600
+        let top = 1600;
         if (document.body.scrollTop > top || document.documentElement.scrollTop > top) {
           button.style.display = 'block';
         } else {

@@ -4,41 +4,46 @@
       "id": 0,
       "title": "Forum Group Discussion",
       "descTitle": "Evaluasi Kurikulum Program Studi Informatika - 2",
+      "tag": "FGD",
       "images": "FGD.jpg",
       "datetime": "09 Desember 2019 - 12.00 AM",
       "link": "berita/evaluasi-kurikulum-if",
       "info": "Prodi Informatika mengadakan Forum Group Discussion dengan tema Evaluasi Kurikulum Program Studi Informatika - 2",
-      "desc": "Sesuai dengan Peraturan Menteri Riset, Teknologi, dan Pendidikan Tinggi Republik Indonesia Nomor 44 tahun 2015, perguruan tinggi diwajibkan untuk menyusun, menyelenggarakan, dan mengevaluasi kurikulum. Kurikulum adalah seperangkat rencana dan pengaturan mengenai capaian pembelajaran lulusan, bahan kajian, proses, dan penilaian yang digunakan sebagai pedoman penyelenggaraan program studi yang disesuaikan dengan profil lulusan. Kegiatan pemantauan dan evaluasi kurikulum perlu dilakukan secara periodik dalam rangka menjaga dan meningkatkan mutu proses pembelajaran. Oleh karena itu, Program Studi Informatika ITK bermaksud menyelenggarakan Focus Group Discussion (FGD) Kurikulum sebagai sarana untuk sosialisasi dan penetapan kurikulum Informatika ITK 2020-2025 yang sebelumnya telah disusun oleh Tim Kurkulum Informatika ITK."
+      "desc": "Sesuai dengan Peraturan Menteri Riset, Teknologi, dan Pendidikan Tinggi Republik Indonesia Nomor 44 tahun 2015, perguruan tinggi diwajibkan untuk menyusun, menyelenggarakan, dan mengevaluasi kurikulum. Kurikulum adalah seperangkat rencana dan pengaturan mengenai capaian pembelajaran lulusan, bahan kajian, proses, dan penilaian yang digunakan sebagai pedoman penyelenggaraan program studi yang disesuaikan dengan profil lulusan. Kegiatan pemantauan dan evaluasi kurikulum perlu dilakukan secara periodik dalam rangka menjaga dan meningkatkan mutu proses pembelajaran. Oleh karena itu, Program Studi Informatika ITK bermaksud menyelenggarakan Focus Group Discussion (FGD) Kurikulum sebagai sarana untuk sosialisasi dan penetapan kurikulum Informatika ITK 2020-2025 yang sebelumnya telah disusun oleh Tim Kurkulum Informatika ITK. \n\nPembicara Materi: \n1. Prof. Ir. Zainal Arifin Hasibuan, MSc., PhD. (Ketua APTIKOM 2018-2022)\n2. Dr.techn. Saiful Akbar, ST., MT. (Kaprodi Program Sarjana Teknik Informatika ITB)."
 
     },
     {
       "id": 1,
       "title": "Born Innovation Festival",
       "descTitle": "Born Innovation Festival",
+      "tag": "Pembicara",
       "images": "telkomfest.jpg",
       "datetime": "11 November 2019 - 12.00 AM",
       "link": "berita/born-invest",
-      "info": "Dosen Prodi Informatika ikut berpartisipasi dalam Born Innovation \n Festival",
+      "info": "Dosen Prodi Informatika ikut berpartisipasi dalam Born Innovation Festival",
       "desc": "Dosen Prodi Informatika berpartisipasi dalam 'BORN INNOVATION FESTIVAL'  yang diadakan oleh telkom."
     },
     {
       "id": 2,
       "title": "Forum Group Discussion",
       "descTitle": "Kurikulum Prodi Informatika",
+      "tag": "Rapat Internal",
       "images": "FGD_2019.jpeg",
       "datetime": "14 November 2019 - 12:00 AM",
       "link": "berita/kurikulum-if",
       "info": "Prodi Informatika mengadakan Rapat Internal dengan tema Kurikulum Prodi Informatika",
-      "desc": ""
+      "desc": "Sesuai dengan Peraturan Menteri Riset, Teknologi, dan Pendidikan Tinggi Republik Indonesia Nomor 44 tahun 2015, perguruan tinggi diwajibkan untuk menyusun, menyelenggarakan, dan mengevaluasi kurikulum. Kurikulum adalah seperangkat rencana dan pengaturan mengenai capaian pembelajaran lulusan, bahan kajian, proses, dan penilaian yang digunakan sebagai pedoman penyelenggaraan program studi yang disesuaikan dengan profil lulusan. Kegiatan pemantauan dan evaluasi kurikulum perlu dilakukan secara periodik dalam rangka menjaga dan meningkatkan mutu proses pembelajaran. Oleh karena itu, Program Studi Informatika ITK bermaksud menyelenggarakan Focus Group Discussion (FGD) Kurikulum sebagai sarana untuk sosialisasi dan penetapan kurikulum Informatika ITK 2020-2025 yang sebelumnya telah disusun oleh Tim Kurkulum Informatika ITK.\n\nTujuan dari kegiatan ini adalah: \n1. Menyampaikan hasil kerja Tim Kurikulum Informatika ITK sebagai bahan untuk ditetapkanya Kurukulum Informatika periode 2020-2025. \n2. Menetapkan Kurikulum Informatika ITK periode 2020-2025 yang telah disahkan melalui FGD. \n3. Merumuskan dan menetapkan Program Kerja Informatika tahun 2020. \n4. Menetapkan struktur organisasi dan tata kelola kerja di lingkungan internal Informatika ITK. \n5. Menetapkan bidang riset unggulan Informatika ITK periode 2020-2025."
     },
     {
       "id": 3,
       "title": "Kuliah Tamu",
       "descTitle": "Empower Business Through VR & AR",
+      "tag": "Kuliah Tamu",
       "images": "KULTAM2.jpeg",
       "datetime": "22 November 2019 - 12:00 AM",
       "link": "berita/kultam-vr-ar",
-      "info": "Prodi Informatika melaksanakan Kuliah Tamu yang dihadiri oleh Annisa Zaskia Putri ( CEO Smarteye) sebagai Pembicara"
+      "info": "Prodi Informatika melaksanakan Kuliah Tamu yang dihadiri oleh Annisa Zaskia Putri ( CEO Smarteye) sebagai Pembicara",
+      "desc": "Program Studi Informatika mengadakan Kuliah Tamu dengan tema Empower Business Through VR & AR yang dihadiri oleh Annisa Zaskia Putri ( CEO Smarteye ) sebagai pembicara. "
     }
   ]
 

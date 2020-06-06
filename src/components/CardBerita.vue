@@ -9,12 +9,23 @@
       <div class="card-content">
         <div class="media">
           <div class="media-content">
-            <p class="date is-6 has-text-justified"><b-icon icon="calendar" size="is-small"></b-icon> {{berita.datetime}} </p>
-            <p class="title is-capitalize">{{berita.descTitle}}</p>
+            <p class="tek is-6 has-text-justified">
+              <b-icon icon="tag" size="is-small"></b-icon>
+              {{berita.tag}}
+            </p>
+            <p class="date is-6 has-text-justified">
+              <b-icon icon="calendar" size="is-small"></b-icon>
+              {{berita.datetime}}
+            </p>
             
+            <p class="title is-capitalize">{{berita.descTitle}}</p>
+
             <p class="subtitle has-text-justified">{{berita.info}}</p>
-            <p class="has-text-right">
-              <router-link tag="a" v-bind:to="berita.link">Lihat Selengkapnya <b-icon icon="arrow-right" size="is-small"></b-icon></router-link>
+            <p class="link has-text-right">
+              <router-link tag="a" v-bind:to="berita.link">
+                Lihat Selengkapnya
+                <b-icon icon="arrow-right" size="is-small"></b-icon>
+              </router-link>
             </p>
           </div>
         </div>
@@ -25,25 +36,24 @@
 <script>
 export default {
   props: ["berita"],
-  methods:{
-    chgRoute(){
-      this.$router.push(this.link)
+  methods: {
+    chgRoute() {
+      this.$router.push(this.link);
     }
   }
 };
 </script>
 <style lang="scss" scoped>
-@import '../assets/style/global';
+@import "../assets/style/global";
 $radius: 2px;
 .card {
   transition: 0.2s all ease;
   box-shadow: 0 4px 16px 0px rgba(0, 0, 0, 0.15);
   border-radius: $radius;
-  // height: 33rem !important;
+  // height: 34.5rem !important;
 
   &:hover {
     transition: 0.2s all ease;
-    // background: #ECF3FB;
   }
 
   &-image {
@@ -56,16 +66,17 @@ $radius: 2px;
     .media {
       &-content {
         padding: 0.5rem;
-        p {
+        .link {
           a {
             color: #0072da;
+            margin-top: 20px;
             &:hover {
               color: #0265c2;
               text-decoration: underline;
             }
           }
         }
-        .title{
+        .title {
           font-size: 1.2rem;
           font-weight: bold;
           font-family: $font-heading-two;
@@ -74,10 +85,11 @@ $radius: 2px;
           margin: -0.8rem 0 1.6rem 0;
           font-size: 1rem;
         }
-        .date{
-          margin: -0.5rem 0 .5rem 0;
-          font-size: .8rem;
+        .date, .tek {
+          margin: -0.3rem 0 0.5rem 0;
+          font-size: 0.8rem;
         }
+        
       }
     }
   }

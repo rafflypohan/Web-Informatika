@@ -23,11 +23,36 @@ export default new VueRouter({
       component: () => import('./views/Berita.vue')
     },
     {
-      path: '/pengumuman/:pengumuman',
-      name: 'pengumuman',
+      path: '/:informasi',
+      name: 'informasi',
       props: true,
       meta: {title: 'Informasi'},
-      component: () => import('./views/Pengumuman.vue')
+      component: () => import('./views/Informasi.vue')
+    },
+    {
+      path: '/bidang-minat/:minat',
+      name: 'bidang-minat',
+      props: true,
+      meta: {title: 'Bidang Minat'},
+      component: () => import('./views/BidangMinat.vue')
+    },
+    {
+      path: '/civitas/himpunan',
+      name: 'himpunan',
+      meta: {title: 'Himpunan'},
+      component: () => import('./views/civitas/Himpunan.vue')
+    },
+    {
+      path: '/akademik/lomba',
+      name: 'lomba',
+      meta: {title: 'Lomba'},
+      component: () => import('./views/akademik/Lomba.vue')
+    },
+    {
+      path: '/akademik/beasiswa',
+      name: 'beasiswa',
+      meta: {title: 'Beasiswa'},
+      component: () => import('./views/akademik/Beasiswa.vue')
     },
     {
       path: '/profil-prodi/tentang-prodi',
@@ -36,7 +61,6 @@ export default new VueRouter({
       component:() => import('./views/profil-prodi/tentang-prodi.vue')
     },
 
-    
     {
       path: '/profil-prodi/visi-misi',
       name: 'visi-misi',

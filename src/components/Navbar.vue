@@ -1,34 +1,5 @@
 <template>
   <section>
-    <!-- <b-navbar id="nav" :fixed-top="fixedTop" :transparent="transparent" class="navbar">
-      <template slot="brand">
-        <b-navbar-item tag="router-link" :to="{ path: '/' }">
-          <img src="../assets/img/iflogo.png" alt="Logo Informatika ITK" />
-        </b-navbar-item>
-      </template>
-      <template slot="end">
-        <b-navbar-dropdown class="navbar__dropdown" hoverable label="Profil Prodi">
-          <b-navbar-item tag="router-link" to="/profil-prodi/tentang-prodi">Tentang Prodi</b-navbar-item>
-          <b-navbar-item tag="router-link" to="/profil-prodi/visi-misi">Visi Misi</b-navbar-item>
-          <b-navbar-item
-            tag="router-link"
-            to="/profil-prodi/struktur-organisasi"
-          >Struktur Organisasi</b-navbar-item>
-          <b-navbar-item class="disabled">Akreditasi</b-navbar-item>
-          <b-navbar-item class="disabled">Kerjasama</b-navbar-item>
-        </b-navbar-dropdown>
-        <b-navbar-dropdown class="navbar__dropdown" hoverable label="Civitas">
-          <b-navbar-item tag="router-link" to="/civitas/dosen">Dosen</b-navbar-item>
-          <b-navbar-item tag="router-link" to="/civitas/tenaga-kependidikan">Tenaga Kependidikan</b-navbar-item>
-          <b-navbar-item class="disabled">Alumni</b-navbar-item>
-          <b-navbar-item class="disabled">Himpunan</b-navbar-item>
-        </b-navbar-dropdown>
-        <b-navbar-dropdown class="navbar__dropdown disabled" hoverable label="Info">
-          <b-navbar-item href="#">About</b-navbar-item>
-          <b-navbar-item href="#">Contact</b-navbar-item>
-        </b-navbar-dropdown>
-      </template>
-    </b-navbar>-->
     <nav id="nav" class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <router-link tag="a" class="navbar-item" to="/">
@@ -55,13 +26,12 @@
               <router-link
                 tag="a"
                 class="navbar-item"
-                exact-active-class="exact-active"
                 to="/profil-prodi/tentang-prodi"
               >Tentang Prodi</router-link>
               <router-link tag="a" class="navbar-item" to="/profil-prodi/visi-misi">Visi & Misi</router-link>
               <!-- <a class="navbar-item" >Tentang Prodi</a> -->
               <!-- <a class="navbar-item" >visi & misi</a> -->
-              <a class="navbar-item">struktur organisasi</a>
+              <router-link tag="a" class="navbar-item" to="/profil-prodi/struktur-organisasi">Struktur Organisasi</router-link>
               <a class="navbar-item">akreditasi</a>
               <a class="navbar-item">kerjasama</a>
             </div>
@@ -69,10 +39,11 @@
           <div class="navbar-item has-dropdown is-hoverable">
             <a class="navbar-link">Civitas</a>
             <div class="navbar-dropdown">
-              <a class="navbar-item">dosen</a>
-              <a class="navbar-item">Tenaga Kependidikan</a>
+              <router-link tag="a" class="navbar-item" to="/civitas/dosen">Dosen</router-link>
+              <router-link tag="a" class="navbar-item" to="/civitas/tenaga-kependidikan">Tenaga Kependidikan</router-link>
               <a class="navbar-item">alumni</a>
-              <a class="navbar-item">himpunan</a>
+              <router-link tag="a" class="navbar-item" to="/civitas/himpunan">Himpunan</router-link>
+              <!-- <a class="navbar-item">himpunan</a> -->
             </div>
           </div>
           <div class="navbar-item has-dropdown is-hoverable">
@@ -108,29 +79,32 @@
 </template>
 
 <script>
-
 export default {
   data() {
-    return {
-      
-    };
+    return {};
   },
   mounted() {
-    document.addEventListener('DOMContentLoaded', () => {
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    // ini buat kalo navbar burgernya di klik maka akan memunculkan menu navbarnya
+    document.addEventListener("DOMContentLoaded", () => {
+      const $navbarBurgers = Array.prototype.slice.call(
+        document.querySelectorAll(".navbar-burger"),
+        0
+      );
 
-        if ($navbarBurgers.length > 0){
-          $navbarBurgers.forEach(el => {
-            el.addEventListener('click', () => {
-              const target = el.dataset.target;
-              const $target = document.getElementById(target);
+      if ($navbarBurgers.length > 0) {
+        $navbarBurgers.forEach(el => {
+          el.addEventListener("click", () => {
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
 
-              el.classList.toggle('is-active');
-              $target.classList.toggle('is-active');
-            });
-          })
-        }
-      });
+            el.classList.toggle("is-active");
+            $target.classList.toggle("is-active");
+          });
+        });
+      }
+    });
+
+    // ini buat kalo navbarnya di scroll nanti stylenya berubah
     this.$nextTick(function() {
       window.addEventListener("scroll", function() {
         const navbar = document.getElementById("nav");

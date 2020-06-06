@@ -1,0 +1,49 @@
+{
+    "informasi": [
+        {
+          "id": 0,
+          "title": "Mahasiswa Baru",
+          "info": "Informasi untuk para calon mahasiswa baru",
+          "link": "mahasiswa-baru",
+          "images": "team.png",
+          "desc": "Selamat datang calon mahasiswa program studi Informatika, Institut Teknologi Kalimantan. Temukan berbagai macam layanan terkait kebutuhan calon mahasiswa program studi Informatika. Para calon mahasiswa diharapkan dapat berinteraksi dengan baik kepada seluruh civitas akademika program studi informatika. Dan juga nantinya dapat ikut berperan dalam memajukan program studi Informatika. Adapun informasi terkait jalur seleksi penerimaan mahasiswa baru Institut Teknologi Kalimantan dapat dilihat di www.itk.ac.id"
+        },
+        {
+          "id": 1,
+          "title": "Prestasi",
+          "info": "Informasi mengenai prestasi-prestasi yang telah dicapai",
+          "link": "prestasi",
+          "images": "trophy.png",
+          "desc": "Data dari menu terkait sedang tidak ada, silahkan kembali lagi nanti."
+        },
+        {
+          "id": 2,
+          "title": "Beasiswa",
+          "info": "Informasi beasiswa untuk para mahasiswa",
+          "images":"university.png",
+          "link": "akademik/beasiswa"
+        },
+        {
+          "id": 3,
+          "title": "Lomba",
+          "info": "Informasi mengenai lomba-lomba yang akan diadakan untuk para mahasiswa",
+          "images": "contest.png",
+          "link": "akademik/lomba"
+        },
+        {
+          "id": 4,
+          "title": "Profil Lulusan",
+          "info": "Prospek lulusan setelah menyelesaikan perkuliahan ",
+          "images": "test.png",
+          "link": "profil-lulusan",
+          "desc": "Berbagai peran yang dapat dilakukan oleh lulusan program studi Informatika di bidang keahlian atau bidang kerja tertentu setelah menyelesaikan masa perkuliahan. \n1.\tPemahaman Teknis terkait ilmu komputer \n2.\tPemahaman terhadap tema dan prinsip-prinsip umum untuk diterapkan dan diaplikasikan pada bidang Informatika dan bidang lainnya \n3.\tPemahaman terkait interaksi antara teori dan praktek \n4.\tKemampuan berpikir pada berbagai tingkat detail dan transaksi \n5.\tPemahaman dalam menerapkan pengetahuan Informatika untuk memecahkan masalah di dunia nyata \n6.\tPengalaman untuk menerpakan pengetahuan dalam proyek pengembangan perangkat lunak \n7.\tKomitmen untuk terus belajar dan meningkatkan keahlian sepanjang karir, melalui sertifikasi, pelatihan manajemen, atau pelatihan bidang ilmu tertentu \n8.\tKomitmen terhadap tanggung jawab profesi \n9.\tKemampuan komunikasi dan organisasi \n10.\tPengetahuan yang luas terhadap aplikasi komputasi \n11.\tPengetahuan terhadap bidang ilmu yang spesifik selain Informatika"
+        },
+        {
+          "id": 5,
+          "title": "Himpunan",
+          "info": "Informasi mengenai HMIF",
+          "images": "idea.png",
+          "link": "civitas/himpunan"
+        }
+      ]
+}
